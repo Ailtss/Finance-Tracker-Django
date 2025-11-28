@@ -43,47 +43,5 @@ O sistema permite criar, listar e organizar transações de forma simples, com s
 
 ---
 
-## 🛠️ Instalação e Execução
-
-### 1) Clone o repositório
-```bash
-git clone https://github.com/SEU-USUARIO/seu-repositorio.git
-cd seu-repositorio
-```
-
-### 2) Crie e ative um ambiente virtual
-```bash
-python -m venv venv
-source venv/bin/activate   # Mac/Linux
-venv\Scripts\activate      # Windows
-```
-
-### 3) Instale as dependências
-```bash
-pip install -r requirements.txt
-```
-
-### 4) Execute as migrações
-```bash
-python manage.py migrate
-```
-
-### 5) Rode o servidor
-```bash
-python manage.py runserver
-```
-
-Acesse em: **http://127.0.0.1:8000/**
-
----
-
-## 📝 Como usar
-1. Crie sua conta ou faça login  
-2. Crie categorias  
-3. Adicione lançamentos  
-4. Veja a lista com filtros e paginação  
-
----
-
 ## 📄 License
 Este projeto é apenas para fins acadêmicos.
