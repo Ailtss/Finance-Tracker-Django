@@ -39,37 +39,6 @@ O sistema permite criar, listar e organizar transações de forma simples, com s
 
 ---
 
-## 📁 Estrutura de Pastas
-
-```
-finance_project/
-│
-├── tracker/                # App principal
-│   ├── models.py
-│   ├── views.py
-│   ├── forms.py
-│   ├── urls.py
-│   ├── filters.py
-│   └── templates/tracker/
-│       ├── index.html
-│       ├── transactions-list.html
-│       ├── create-transaction.html
-│       ├── categories-list.html
-│       ├── category-form.html
-│       └── partials/
-│           └── transaction-form.html
-│
-├── finance_project/
-│   ├── settings.py
-│   ├── urls.py
-│   └── templates/
-│       └── base.html
-│
-└── static/                 # Arquivos estáticos
-```
-
----
-
 ## 🛠️ Instalação e Execução
 
 ### 1) Clone o repositório
