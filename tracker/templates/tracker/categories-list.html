@@ -1,0 +1,26 @@
+{% extends 'tracker/base.html' %}
+
+{% block title %}Minhas Categorias{% endblock %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+    <div class="flex justify-between items-center mb-6">
+        <h1 class="text-2xl font-bold text-white">Minhas Categorias</h1>
+        
+        <button 
+            hx-get="{% url 'create-category' %}"
+            hx-target="#form-container"
+            class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg flex items-center">
+            Nova Categoria
+        </button>
+    </div>
+
+    <!-- Container para o formulário -->
+    <div id="form-container"></div>
+
+    <!-- Container para a lista de categorias -->
+    <div id="categories-container">
+        {% include 'tracker/partials/categories-container.html' %}
+    </div>
+</div>
+{% endblock %}
