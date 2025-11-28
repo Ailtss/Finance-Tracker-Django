@@ -35,7 +35,11 @@ O sistema permite criar, listar e organizar transações de forma simples, com s
 - Criar lançamentos (receitas/despesas)  
 - Listar lançamentos com paginação  
 - Filtros por nome, categoria, data, tipo  
-- Interações dinâmicas usando HTMX (`hx-get`, `hx-post`)  
+- Interações dinâmicas usando HTMX (`hx-get`, `hx-post`)
+
+### ✔️ Gráficos (Transações)
+- Visualização de gráficos
+- Barra e Pizza
 
 ---
 
