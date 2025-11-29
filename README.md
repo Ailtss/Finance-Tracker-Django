@@ -1,130 +1,168 @@
+---
+
 # 📌 Finance Project – Controle Financeiro Pessoal
 
-Aplicação web desenvolvida em **Django** para gerenciar lançamentos financeiros, categorias e usuários.  
-O sistema permite criar, listar e organizar transações de forma simples, com suporte a HTMX para interações rápidas sem recarregar a página.
+Aplicação web desenvolvida em **Django** para gerenciar lançamentos financeiros, categorias e usuários.
+O sistema permite criar, listar e organizar transações de forma simples, com suporte a **HTMX** para interações rápidas sem recarregar a página.
 
 ---
 
 ## 🔧 Tecnologias Utilizadas
 
-- **Python 3**
-- **Django 4**
-- **SQLite3**
-- **HTMX**
-- **Tailwind/DaisyUI (via CDN)**
-- **django-allauth** (autenticação)
-- **django-debug-toolbar**
-- **widget-tweaks**
-- **django-filters**
+* **Python 3**
+* **Django 4**
+* **SQLite3**
+* **HTMX**
+* **Tailwind/DaisyUI (via CDN)**
+* **django-allauth** (autenticação)
+* **django-debug-toolbar**
+* **widget-tweaks**
+* **django-filters**
 
 ---
 
 ## 🚀 Funcionalidades
 
 ### ✔️ Usuários
-- Autenticação com Django Allauth  
-- Cadastro, login e logout  
-- Usuário customizado (`tracker.User`)
+
+* Autenticação com Django Allauth
+* Cadastro, login e logout
+* Usuário customizado (`tracker.User`)
 
 ### ✔️ Categorias
-- Criar novas categorias  
-- Listar categorias  
-- Selecionar categoria ao criar lançamentos  
+
+* Criar e listar categorias
+* Seleção de categoria ao criar lançamentos
 
 ### ✔️ Lançamentos (Transações)
-- Criar lançamentos (receitas/despesas)  
-- Listar lançamentos com paginação  
-- Filtros por nome, categoria, data, tipo  
-- Interações dinâmicas usando HTMX (`hx-get`, `hx-post`)
 
-### ✔️ Gráficos (Transações)
-- Visualização de gráficos
-- Barra e Pizza
+* Criar receitas e despesas
+* Listar lançamentos com paginação
+* Filtrar por nome, categoria, data e tipo
+* Interações dinâmicas com **HTMX** (`hx-get`, `hx-post`)
 
----
+### ✔️ Gráficos
 
-### 🛠️ Pré-requisitos
-- Python 3.12.10 (⚠️ Não usar Python 3.14 ou superior)
-- Git
-- (Opcional) Editor de código: VS Code, PyCharm, etc.
-
-- Windows: Baixe o Python 3.12.10
-. Durante a instalação, marque “Add Python to PATH”.
-  
----
-
-### 📥 Clonar o projeto
-- git clone <URL_DO_SEU_REPOSITORIO>
-- cd <NOME_DO_REPOSITORIO>
+* Gráfico de barras
+* Gráfico de pizza
 
 ---
 
-### 🐍 Criar e ativar o ambiente virtual
+## 🛠️ Pré-requisitos
 
-Windows:
+* **Python 3.12.10**
+  ⚠️ *Evite Python 3.14 ou superior (causa erros com dependências).*
+* **Git**
+* (Opcional) **VS Code**, PyCharm, etc.
 
+### 🔽 Windows
+
+Baixe Python 3.12.10
+
+> Marque a opção **"Add Python to PATH"** durante a instalação.
+
+---
+
+## 📥 Clonar o projeto
+
+```bash
+git clone <URL_DO_SEU_REPOSITORIO>
+cd <NOME_DO_REPOSITORIO>
+```
+
+---
+
+## 🐍 Criar e ativar o ambiente virtual
+
+### **Windows**
+
+```bash
 python -m venv venv
 .\venv\Scripts\activate
+```
 
-Linux/macOS:
+### **Linux/macOS**
 
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 
-Sempre ative o ambiente virtual antes de instalar pacotes ou rodar o projeto.
+> Sempre ative o ambiente virtual antes de instalar pacotes ou rodar o projeto.
 
 ---
 
-### ⚡ Atualizar pip e setuptools
+## ⚡ Atualizar pip e setuptools
 
+```bash
 pip install --upgrade pip
 pip install "setuptools<81"
-Evita erros com pkg_resources deprecated
+```
+
+> Isso evita erros relacionados ao `pkg_resources`.
 
 ---
 
-### 📦 Instalar dependências
+## 📦 Instalar dependências
 
+```bash
 pip install -r requirements.txt
+```
 
 ---
 
-### 🗄️ Configurar banco de dados
+## 🗄️ Configurar banco de dados
 
+```bash
 python manage.py migrate
 python manage.py createsuperuser
+```
 
-Crie um superusuário para acessar o admin.
+Crie um superusuário para acessar o painel administrativo.
 
 ---
 
-### 🌐 Rodar o servidor
+## 🌐 Rodar o servidor
 
+```bash
 python manage.py runserver
+```
 
 Acesse no navegador:
-
-http://127.0.0.1:8000/
+👉 [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 ---
 
-### ✨ Dicas úteis
+## ✨ Dicas úteis
 
-Sempre use Python 3.12.10.
+* Sempre use **Python 3.12.10**.
+* Certifique-se de que o **ambiente virtual está ativo**.
+* Para instalar novos pacotes:
 
-Certifique-se de que o ambiente virtual está ativo.
-
-Se precisar instalar pacotes extras:
-
+```bash
 pip install <pacote>
 pip freeze > requirements.txt
+```
 
-Avisos sobre pkg_resources podem ser ignorados.
+* Avisos sobre `pkg_resources` podem ser ignorados.
+* Se ocorrer *ModuleNotFoundError*, confirme se:
 
-Para erros de módulo não encontrado, verifique se o pacote está no requirements.txt e se foi instalado no ambiente virtual correto.
+  * o pacote está instalado no ambiente virtual
+  * ele existe no `requirements.txt`
 
 ---
 
-
 ## 📄 License
+
 Este projeto é apenas para fins acadêmicos.
+
+---
+
+Se quiser, posso também:
+
+✔ gerar um **banner do projeto**
+✔ criar **badges** (Python version, Django version, Status)
+✔ adicionar **screenshots**
+✔ melhorar ainda mais a estrutura
+
+É só me pedir!
