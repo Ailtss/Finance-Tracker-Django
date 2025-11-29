@@ -157,12 +157,3 @@ pip freeze > requirements.txt
 Este projeto é apenas para fins acadêmicos.
 
 ---
-
-Se quiser, posso também:
-
-✔ gerar um **banner do projeto**
-✔ criar **badges** (Python version, Django version, Status)
-✔ adicionar **screenshots**
-✔ melhorar ainda mais a estrutura
-
-É só me pedir!
