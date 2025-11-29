@@ -55,12 +55,6 @@ O sistema permite criar, listar e organizar transações de forma simples, com s
 * **Git**
 * (Opcional) **VS Code**, PyCharm, etc.
 
-### 🔽 Windows
-
-Baixe Python 3.12.10
-
-> Marque a opção **"Add Python to PATH"** durante a instalação.
-
 ---
 
 ## 📥 Clonar o projeto
