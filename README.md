@@ -27,7 +27,6 @@ O sistema permite criar, listar e organizar transações de forma simples, com s
 
 * Autenticação com Django Allauth
 * Cadastro, login e logout
-* Usuário customizado (`tracker.User`)
 
 ### ✔️ Categorias
 
